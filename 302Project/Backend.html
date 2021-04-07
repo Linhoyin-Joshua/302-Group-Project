@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tam Jei Backend</title>
+</head>
+<body>
+    <h1>Deliveroo Orders</h1>
+    <img src="./TamJei.jpg" alt="TamJei"  >
+    <table border="1">
+        <tr>
+            <th>Order ID</th>
+            <th>Dish Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        {{each orders}}
+        <tr>
+            <td>{{ $value.orderID }}</td>
+            <td>{{ $value.dishName }}</td>
+            <td>{{ $value.quantity }}</td>
+            <td>{{ $value.price }}</td>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+</html>
